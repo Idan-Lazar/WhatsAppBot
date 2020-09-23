@@ -9,7 +9,7 @@ function App() {
   const [ready, setReady] = useState(false);
   const [socketState, setSocket] = useState(false);
   useEffect(() => {
-    const socket = io("http://localhost:3001");
+    const socket = io(process.env.REACT_APP_HOST_PATH);
     setSocket(socket)
     socket.on("getQr", (data) => {
       console.log(data);
