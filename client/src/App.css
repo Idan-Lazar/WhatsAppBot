@@ -1,0 +1,26 @@
+.App {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.qr {
+  margin-top: 75vh;
+}
+.loader {
+  margin-top: 75vh;
+  border: 16px solid #f3f3f3;
+  border-top: 16px solid #25d366;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
